@@ -29,8 +29,10 @@ body {
 }
 
 html, body {
-  width: 100%;
+  box-sizing: border-box;
+  width: 90%;
   height: 100%;
+  margin: 0 auto;
   font-size: 15px;
   font-family: 'Montserrat', sans-serif;
 }
@@ -367,7 +369,7 @@ template {
   display: none;
 }
 
-.button-pattern {
+.button {
   box-sizing: border-box;
   display: inline-block;
   width: fit-content;
@@ -383,59 +385,32 @@ template {
   transition: .5s;
 }
 
-.button-pattern:hover {
+.button:hover {
   transform: scale(1.1);
 }
 
-.button-pattern--blue {
+.button--blue {
   color: #fff;
-  background-color: #111E6C;
+  background-color: #1e6ade;
 }
 
-.title-pattern {
+.title {
   font-size: 2.3rem;
-  color: #111E6C;
   font-weight: bold;
   text-align: center;
   padding-top: 2rem;
 }
 
-.title-pattern--white {
+.title--white {
   color: #fff;
 }
 
-.animation-section {
-  opacity: 0;
-  transform: translate3d(-130px, 0, 0) ;
-  transition: 2s;
-}
-
-.animation-section-start {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-}
-
-.input-error {
-  border-bottom-color: tomato !important;
-}
-
-.required-field-message {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-top: 5px;
-  color: tomato;
-}
-
 @media only screen and (max-width: 900px) {
-  .title-pattern {
+  .title {
     font-size: 2rem;
     padding-top: initial;
   }
-  .our-team__team-container {
-    box-sizing: border-box;
-    padding: 1rem 0;
-  }
-  .button-pattern {
+  .button {
     margin: 0 auto;
   }
 }
