@@ -397,12 +397,8 @@ template {
 .title {
   font-size: 2.3rem;
   font-weight: bold;
-  text-align: center;
-  padding-top: 2rem;
-}
-
-.title--white {
-  color: #fff;
+  text-align: left;
+  color: #272727;
 }
 
 @media only screen and (max-width: 900px) {
